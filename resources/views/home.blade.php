@@ -3,20 +3,15 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
+        <div class="col-md-8 ">
+            <card v-bind:carddata="{cardheader: 'https://google.com', cardtitle: 'Google', cardfooter: '@google' }" class="mb-5">
+            </card>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+            <card v-bind:carddata="{cardheader: 'https://vuejs.org', cardtitle: 'Vue', cardfooter: '@vuejs' }" class="mb-5">
+            </card>
 
-                    You are logged in!
-                </div>
-            </div>
+            <card v-bind:carddata="{cardheader: 'https://laravel.com', cardtitle: 'Laravel', cardfooter: '@laravel' }" class="mb-5">
+            </card>
         </div>
     </div>
 </div>

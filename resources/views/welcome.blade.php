@@ -12,8 +12,9 @@
 <div id="app">
 
     <navbar></navbar>
-    <flash class="alert-flash" message="{{ session('flash') }}"></flash>
+
     <postlist></postlist>
+
 </div>
 <script src="{{ asset('js/app.js') }}"></script>
 </body>
